@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.1
  * 
  */
-@WebServiceClient(name = "MathServiceImplService", targetNamespace = "http://impl.service.jaxws.demo.jcg/", wsdlLocation = "file:/C:/MZheng_Java_workspace/Java%20Code%20Geek%20Examples/JAX-WS/jax-ws-client-wsimport/wsdls/mathServer.wsdl")
+@WebServiceClient(name = "MathServiceImplService", targetNamespace = "http://impl.service.jaxws.demo.jcg/", wsdlLocation = "file:/C:/MyDocuments/EclipseNeon/JAX-WS/jax-ws-client-wsimport/wsdls/mathServer.wsdl")
 public class MathServiceImplService
     extends Service
 {
@@ -30,9 +30,9 @@ public class MathServiceImplService
         try {
             URL baseUrl;
             baseUrl = jcg.demo.jaxws.client.math.MathServiceImplService.class.getResource(".");
-            url = new URL(baseUrl, "file:/C:/MZheng_Java_workspace/Java%20Code%20Geek%20Examples/JAX-WS/jax-ws-client-wsimport/wsdls/mathServer.wsdl");
+            url = new URL(baseUrl, "file:/C:/MyDocuments/EclipseNeon/JAX-WS/jax-ws-client-wsimport/wsdls/mathServer.wsdl");
         } catch (MalformedURLException e) {
-            logger.warning("Failed to create URL for the wsdl Location: 'file:/C:/MZheng_Java_workspace/Java%20Code%20Geek%20Examples/JAX-WS/jax-ws-client-wsimport/wsdls/mathServer.wsdl', retrying as a local file");
+            logger.warning("Failed to create URL for the wsdl Location: 'file:/C:/MyDocuments/EclipseNeon/JAX-WS/jax-ws-client-wsimport/wsdls/mathServer.wsdl', retrying as a local file");
             logger.warning(e.getMessage());
         }
         MATHSERVICEIMPLSERVICE_WSDL_LOCATION = url;

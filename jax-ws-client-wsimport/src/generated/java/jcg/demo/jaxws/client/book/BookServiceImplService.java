@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.1
  * 
  */
-@WebServiceClient(name = "BookServiceImplService", targetNamespace = "http://impl.service.jaxws.demo.jcg/", wsdlLocation = "http://localhost:9980/bookServer?wsdl")
+@WebServiceClient(name = "BookServiceImplService", targetNamespace = "http://impl.service.jaxws.demo.jcg.java.main/", wsdlLocation = "http://localhost:9980/bookServer?wsdl")
 public class BookServiceImplService
     extends Service
 {
@@ -43,7 +43,7 @@ public class BookServiceImplService
     }
 
     public BookServiceImplService() {
-        super(BOOKSERVICEIMPLSERVICE_WSDL_LOCATION, new QName("http://impl.service.jaxws.demo.jcg/", "BookServiceImplService"));
+        super(BOOKSERVICEIMPLSERVICE_WSDL_LOCATION, new QName("http://impl.service.jaxws.demo.jcg.java.main/", "BookServiceImplService"));
     }
 
     /**
@@ -53,7 +53,7 @@ public class BookServiceImplService
      */
     @WebEndpoint(name = "BookServiceImplPort")
     public BookService getBookServiceImplPort() {
-        return super.getPort(new QName("http://impl.service.jaxws.demo.jcg/", "BookServiceImplPort"), BookService.class);
+        return super.getPort(new QName("http://impl.service.jaxws.demo.jcg.java.main/", "BookServiceImplPort"), BookService.class);
     }
 
     /**
@@ -65,7 +65,7 @@ public class BookServiceImplService
      */
     @WebEndpoint(name = "BookServiceImplPort")
     public BookService getBookServiceImplPort(WebServiceFeature... features) {
-        return super.getPort(new QName("http://impl.service.jaxws.demo.jcg/", "BookServiceImplPort"), BookService.class, features);
+        return super.getPort(new QName("http://impl.service.jaxws.demo.jcg.java.main/", "BookServiceImplPort"), BookService.class, features);
     }
 
 }

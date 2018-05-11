@@ -16,7 +16,7 @@ import javax.xml.ws.ResponseWrapper;
  * Generated source version: 2.1
  * 
  */
-@WebService(name = "BookService", targetNamespace = "http://service.jaxws.demo.jcg/")
+@WebService(name = "BookService", targetNamespace = "http://service.jaxws.demo.jcg.java.main/")
 @XmlSeeAlso({
     ObjectFactory.class
 })
@@ -31,8 +31,8 @@ public interface BookService {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "getBook", targetNamespace = "http://service.jaxws.demo.jcg/", className = "jcg.demo.jaxws.client.book.GetBook")
-    @ResponseWrapper(localName = "getBookResponse", targetNamespace = "http://service.jaxws.demo.jcg/", className = "jcg.demo.jaxws.client.book.GetBookResponse")
+    @RequestWrapper(localName = "getBook", targetNamespace = "http://service.jaxws.demo.jcg.java.main/", className = "jcg.demo.jaxws.client.book.GetBook")
+    @ResponseWrapper(localName = "getBookResponse", targetNamespace = "http://service.jaxws.demo.jcg.java.main/", className = "jcg.demo.jaxws.client.book.GetBookResponse")
     public Book getBook(
         @WebParam(name = "bookId", targetNamespace = "")
         Integer bookId);
